@@ -86,12 +86,5 @@
             android:layout_height="wrap_content"
             android:onClick="OnCLick"
             android:text="Notification" />
-
-        <Button
-            android:id="@+id/btn_StatusBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="OnCLick"
-            android:text="StatusBar" />
     </LinearLayout>
 </ScrollView>
