@@ -27,7 +27,8 @@
         <activity android:name=".view.ToolBarNestedScrollActivity" />
         <activity android:name=".view.BottomSheetActivity" />
         <activity android:name=".view.Notification" />
-        <activity android:name=".view.NotificationNext"></activity>
+        <activity android:name=".view.NotificationNext" />
+        <activity android:name=".view.StatusBarActivity"></activity>
     </application>
 
 </manifest>

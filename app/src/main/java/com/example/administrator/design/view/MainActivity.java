@@ -49,6 +49,10 @@ public class MainActivity extends Activity {
                 break;
             case R.id.btn_Notification:
                 startActivity(new Intent(MainActivity.this, Notification.class));
+                break;
+            case R.id.btn_StatusBar:
+                startActivity(new Intent(MainActivity.this, StatusBarActivity.class));
+                break;
             default:
                 break;
         }
