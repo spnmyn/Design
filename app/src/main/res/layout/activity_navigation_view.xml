@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.design.view.NavigationViewActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="内容区域" />
+
+    </RelativeLayout>
+    <!--
+    navigationView:headerLayout="@layout/headerLayout"添加头布局
+    navigationView:menu="@menu/my_menu"以菜单的形式 添加点击按钮
+    -->
+    <android.support.design.widget.NavigationView xmlns:navigationView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navigationView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        navigationView:headerLayout="@layout/header_layout"
+        navigationView:menu="@menu/my_menu">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

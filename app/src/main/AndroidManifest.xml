@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.design">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.CollapsingToolLayoutActivity" />
+        <activity android:name=".view.FloatingActionButtonActivity" />
+        <activity android:name=".view.NavigationViewActivity" />
+        <activity android:name=".view.NestedScrollActivity" />
+        <activity android:name=".view.SnackBarActivity" />
+        <activity android:name=".view.TabLayoutActivity" />
+        <activity android:name=".view.TextInputLayoutActivity" />
+        <activity android:name=".view.ToolBarActivity" />
+        <activity android:name=".view.ToolBarNestedScrollActivity" />
+        <activity android:name=".view.BottomSheetActivity" />
+        <activity android:name=".view.Notification" />
+        <activity android:name=".view.NotificationNext"></activity>
+    </application>
+
+</manifest>

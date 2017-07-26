@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.design.view.CollapsingToolLayoutActivity">
+
+    <!--
+     app:layout_scrollFlags="scroll|enterAlways">
+     设置ToolBar和NestedScrollView一起滚动
+     1.scroll:想要滑动出屏幕的view，都需要设置scroll
+     2.enterAlways：向上滑动时出去；向下滑动时出来
+     3.enterAlwaysCollapsed:向上滑动时立马消失；向下滑动时，所有数据都出来时才出来
+     4.exitUntilCollapsed 需要结合 android:minHeight="10dp" 一起使用
+     向上滑动时出去，保留最小高度；向下滑动时，所有数据都出来时才出来
+    -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+        <!--可以折叠的ToolbarLayout
+        app:contentScrim="#00ff00"设置ToolBarde 颜色
+        -->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="10dp"
+            app:contentScrim="#00ff00"
+            app:expandedTitleGravity="bottom|right"
+            app:expandedTitleMargin="@dimen/activity_horizontal_margin"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <!--
+             app:layout_collapseMode="parallax"视差模式。折叠时会有视差折叠效果
+             app:layout_collapseMode="pin"固定模式。滑动时会固定到屏幕顶端
+             app:layout_collapseParallaxMultiplier="0.8"视差因子（0-1）
+            -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/woman"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.2" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:layout_collapseMode="pin">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <!--
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    NestedScrollView放到TooBar下边
+    -->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="哈哈哈" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="哈哈哈" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="哈哈哈" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="哈哈哈" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="哈哈哈" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="哈哈哈" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="哈哈哈" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="哈哈哈" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="哈哈哈" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

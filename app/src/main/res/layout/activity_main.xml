@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.design.view.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnCLick"
+            android:text="TextInputLayout（5.0）" />
+
+        <Button
+            android:id="@+id/btn_FloatingActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnCLick"
+            android:text="FloatingActionButtonActivity（5.0）" />
+
+        <Button
+            android:id="@+id/btn_SnackBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnCLick"
+            android:text="SnackBar（5.0）" />
+
+        <Button
+            android:id="@+id/btn_NavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnCLick"
+            android:text="NavigationView（5.0）" />
+
+        <Button
+            android:id="@+id/btn_TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnCLick"
+            android:text="TabLayout（5.0）" />
+
+        <Button
+            android:id="@+id/btn_ToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnCLick"
+            android:text="ToolBar（5.0）" />
+
+        <Button
+            android:id="@+id/btn_NestedScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnCLick"
+            android:text="NestedScroll（5.0）" />
+
+        <Button
+            android:id="@+id/btn_ToolBarNestedScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnCLick"
+            android:text="ToolBarNestedScroll（5.0）" />
+
+        <Button
+            android:id="@+id/btn_CollapsingToolLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnCLick"
+            android:text="CollapsingToolLayout（5.0）" />
+
+        <Button
+            android:id="@+id/btn_BottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnCLick"
+            android:text="BottomSheet" />
+
+        <Button
+            android:id="@+id/btn_Notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnCLick"
+            android:text="Notification" />
+    </LinearLayout>
+</ScrollView>

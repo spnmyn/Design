@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.design.view.FloatingActionButtonActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_float_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    <!--
+    命名空间（用于引入自身的资源）app为自己的名字随便起
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    注意：只有点击的时候，app:rippleColor="#ff0000" 该属性才有效果（背景颜色改变）
+    -->
+    <android.support.design.widget.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:onClick="onCLick"
+        android:src="@mipmap/ic_launcher"
+        app:backgroundTint="#0000ff"
+        app:elevation="10dp"
+        app:pressedTranslationZ="20dp"
+        app:rippleColor="#ff0000" />
+
+</RelativeLayout>
